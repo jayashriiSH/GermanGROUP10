@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Germany Boarding Pass</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #0d6f8a;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .boarding-pass {
+      background-color: #fff;
+      width: 95%;
+      max-width: 1000px;
+      padding: 3rem;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      margin: 2rem auto;
+      position: relative;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      text-decoration: none;
+      color: #0d6f8a;
+      background: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background 0.3s;
+    }
+
+    .back-link:hover {
+      background: #e0f7ff;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .label {
+      background-color: black;
+      color: white;
+      padding: 0.4em 0.8em;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 5px;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0 1rem;
+      font-weight: 800;
+      flex-grow: 1;
+    }
+
+    .plane-icon {
+      font-size: 2.5rem;
+    }
+
+    .divider {
+      height: 2px;
+      background-color: black;
+      margin: 2rem 0 1rem 0;
+    }
+
+    .barcodes {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .barcode {
+      height: 60px;
+      width: 250px;
+      background: repeating-linear-gradient(
+        to right,
+        black 0,
+        black 2px,
+        white 2px,
+        white 4px
+      );
+    }
+
+    .barcode.small {
+      width: 140px;
+      height: 50px;
+    }
+
+    .flight-info {
+      background-color: #ffffff;
+      color: #000;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      border-radius: 15px;
+      line-height: 1.7;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .flight-info h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .video-container video {
+      width: 90%;
+      max-width: 800px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="boarding-pass">
+    <a class="back-link" href="index.html">← Back to Home</a>
+    <div class="header">
+      <span class="label">LET’S GO TO</span>
+      <h1>GERMANY</h1>
+      <div class="plane-icon">✈️</div>
+    </div>
+    <div class="divider"></div>
+    <div class="barcodes">
+      <div class="barcode"></div>
+      <div class="barcode small"></div>
+    </div>
+  </div>
+
+  <div class="flight-info">
+    <h2>Flight Info: Chennai to Berlin</h2>
+    <p>A flight from Chennai to Berlin is available, but there are no direct flights. The flight duration is approximately 12 hours, 44 minutes with one stop, according to Cleartrip. The cheapest round trip fare starts from ₹30,789, according to Cleartrip.</p>
+
+    <ul>
+      <li><strong>No direct flights:</strong> There are no direct flights from Chennai (MAA) to Berlin (BER).</li>
+      <li><strong>Flight time:</strong> The flight duration with one stop is around 12 hours, 44 minutes.</li>
+      <li><strong>Airlines:</strong> British Airways, Lufthansa, and others operate with one stopover.</li>
+      <li><strong>Fare:</strong> Round trip fares can be as low as ₹30,789.</li>
+      <li><strong>Stops:</strong> Flights typically involve one stop, with airlines like British Airways, Etihad Airways, and Lufthansa potentially being used.</li>
+      <li><strong>Booking tip:</strong> Book 2-3 months in advance for better prices (HDFC Ergo).</li>
+      <li><strong>Other cities:</strong> Flights also go to Munich, Frankfurt, and Dusseldorf (Skyscanner).</li>
+    </ul>
+
+    <h2>Best Airport to Fly into Germany</h2>
+    <p>Looking for the cheapest airport? Berlin and Frankfurt are often more affordable than Munich. But your choice should also depend on your itinerary:</p>
+
+    <ul>
+      <li><strong>Frankfurt:</strong> Ideal for exploring castles, Rhine Valley, Black Forest, and wine regions.</li>
+      <li><strong>Munich:</strong> Perfect for Bavarian culture—Lederhosen, sausages, Alps.</li>
+      <li><strong>Berlin:</strong> Great base to explore Northern Germany cities.</li>
+    </ul>
+
+    <h2>Open Jaw Flights for Efficiency</h2>
+    <p>Flying into one city and out of another can save time, though it may cost more and have rental car return fees. For a 1-week Germany itinerary, consider flying into Munich and leaving from Frankfurt.</p>
+
+    <h2>Germany Itinerary - 7 Days</h2>
+    <p>There’s no one-size-fits-all itinerary, but this structure offers a great starting point for exploring Germany in 7 days.</p>
+
+    <ul>
+      <li><strong>Day 1 - Munich:</strong> Arrive and explore Marienplatz, Viktualienmarkt, and the English Garden.</li>
+      <li><strong>Day 2 - Neuschwanstein Castle Day Trip:</strong> Take a day trip to Füssen to see the fairy-tale castle.</li>
+      <li><strong>Day 3 - Travel to Nuremberg:</strong> Visit Nuremberg Castle, the old town, and local bratwurst spots.</li>
+      <li><strong>Day 4 - Berlin:</strong> Travel to Berlin, explore the Berlin Wall, Brandenburg Gate, and Museum Island.</li>
+      <li><strong>Day 5 - Berlin Continued:</strong> Visit Checkpoint Charlie, East Side Gallery, and enjoy Berlin nightlife.</li>
+      <li><strong>Day 6 - Travel to Frankfurt:</strong> Walk along the River Main, visit Römerberg and explore shopping streets.</li>
+      <li><strong>Day 7 - Rhine Valley Day Trip:</strong> Cruise along the Rhine, see vineyards and medieval castles, and depart.</li>
+    </ul>
+
+    <div class="video-container">
+      <video controls>
+        <source src="assets\Blue and White International Civil Aviation Day Instagram Post.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </div>
+</body>
+</html>
