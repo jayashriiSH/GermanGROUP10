@@ -246,28 +246,39 @@
     </div>
   </section>
 
-  <script>
-headings.forEach((heading, i) => {
-  const chars = heading.textContent.split('');
-  heading.innerHTML = ''; // Clear existing text
+  
+<script>
+  // Select all sections and headings
+  const sections = document.querySelectorAll('section');
+  const headings = document.querySelectorAll('.section-heading');
 
-  chars.forEach(char => {
-    const span = document.createElement('span');
-    span.textContent = char;
-    span.style.display = 'inline-block';
-    heading.appendChild(span);
+  // Split the heading text into individual span elements
+  headings.forEach((heading, i) => {
+    const chars = heading.textContent.split('');
+    heading.innerHTML = ''; // Clear existing text
+
+    chars.forEach(char => {
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.display = 'inline-block';
+      heading.appendChild(span);
+    });
+
+    // GSAP animation for text reveal
+    gsap.from(heading.querySelectorAll('span'), {
+      scrollTrigger: {
+        trigger: sections[i],
+        start: "top center",
+      },
+      y: 100,
+      opacity: 0,
+      stagger: 0.03,
+      duration: 0.8,
+      ease: "power3.out"
+    });
   });
+</script>
 
-  gsap.from(heading.querySelectorAll('span'), {
-    scrollTrigger: {
-      trigger: sections[i],
-      start: "top center",
-    },
-    y: 100,
-    opacity: 0,
-    stagger: 0.03,
-    duration: 0.8,
-    ease: "power3.out"
   });
 });
 
